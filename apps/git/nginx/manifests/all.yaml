@@ -23,9 +23,9 @@ metadata:
   annotations:
 
     # Our special annotation to tell AVP where the secrets are
-    avp.kubernetes.io/path: "secret/data/my-nginx"
+    avp.kubernetes.io/path: "mzc-spring/data/java_and_vault/dev"
 stringData:  
-  MY_SECRET: <password>
+  MY_SECRET: <spring.datasource.username>
 ---
 apiVersion: apps/v1
 kind: Deployment
